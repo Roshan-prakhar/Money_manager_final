@@ -1,0 +1,29 @@
+# Environment Variables for Money Manager Backend
+# Copy these values to your Render backend service environment variables
+
+# Spring Profile
+SPRING_PROFILES_ACTIVE=prod
+
+# JWT Secret (change this to a random string)
+JWT_SECRET=your-random-secret-key-here-12345
+
+# Frontend URL (update after frontend is deployed)
+MONEY_MANAGER_FRONTEND_URL=https://moneymanager-frontend.onrender.com
+
+# App Activation URL
+APP_ACTIVATION_URL=https://moneymanager-backend.onrender.com/
+
+# Database Configuration
+SPRING_DATASOURCE_URL=postgresql://moneymanager_db_vqgd_user:yryMtTEeQIsn1FtnANkDpcngr6TQEoVn@dpg-d32ad2mmcj7s739earp0-a.singapore-postgres.render.com:5432/moneymanager_db_vqgd
+SPRING_DATASOURCE_USERNAME=moneymanager_db_vqgd_user
+SPRING_DATASOURCE_PASSWORD=yryMtTEeQIsn1FtnANkDpcngr6TQEoVn
+
+# Email Configuration (optional - can be set later)
+SPRING_MAIL_HOST=smtp-relay.brevo.com
+SPRING_MAIL_PORT=587
+SPRING_MAIL_USERNAME=926334001@smtp-brevo.com
+SPRING_MAIL_PASSWORD=yagrFv7n4kLON63G
+SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH=true
+SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_ENABLE=true
+SPRING_MAIL_PROTOCOL=smtp
+SPRING_MAIL_PROPERTIES_MAIL_SMTP_FROM=rtgrosh@gmail.com

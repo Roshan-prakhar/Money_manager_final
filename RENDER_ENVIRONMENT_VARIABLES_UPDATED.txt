@@ -1,0 +1,83 @@
+# ===========================================
+# MONEY MANAGER BACKEND - RENDER DEPLOYMENT
+# Environment Variables Configuration (UPDATED)
+# ===========================================
+
+# Spring Profile Configuration
+SPRING_PROFILES_ACTIVE=prod
+
+# JWT Security Configuration
+JWT_SECRET=your-random-secret-key-here-12345
+
+# Frontend URL Configuration
+MONEY_MANAGER_FRONTEND_URL=https://moneymanager-frontend.onrender.com
+
+# App Activation URL Configuration
+APP_ACTIVATION_URL=https://moneymanager-backend.onrender.com/
+
+# ===========================================
+# DATABASE CONFIGURATION (PostgreSQL)
+# ===========================================
+
+# Database Connection URL
+SPRING_DATASOURCE_URL=jdbc:postgresql://dpg-d32ad2mmcj7s739earp0-a.singapore-postgres.render.com:5432/moneymanager_db_vqgd
+
+# Database Credentials
+SPRING_DATASOURCE_USERNAME=moneymanager_db_vqgd_user
+SPRING_DATASOURCE_PASSWORD=yryMtTEeQIsn1FtnANkDpcngr6TQEoVn
+
+# ===========================================
+# SERVER CONFIGURATION (FIXED FOR RENDER)
+# ===========================================
+
+# Server Port (REQUIRED for Render)
+PORT=8080
+
+# ===========================================
+# EMAIL CONFIGURATION (Optional)
+# ===========================================
+
+# Brevo SMTP Configuration
+SPRING_MAIL_HOST=smtp-relay.brevo.com
+SPRING_MAIL_PORT=587
+SPRING_MAIL_USERNAME=926334001@smtp-brevo.com
+SPRING_MAIL_PASSWORD=yagrFv7n4kLON63G
+SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH=true
+SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_ENABLE=true
+SPRING_MAIL_PROTOCOL=smtp
+SPRING_MAIL_PROPERTIES_MAIL_SMTP_FROM=rtgrosh@gmail.com
+
+# ===========================================
+# QUICK COPY-PASTE FOR RENDER (ESSENTIAL VARIABLES):
+# ===========================================
+
+# SPRING_PROFILES_ACTIVE=prod
+# JWT_SECRET=your-random-secret-key-here-12345
+# MONEY_MANAGER_FRONTEND_URL=https://moneymanager-frontend.onrender.com
+# APP_ACTIVATION_URL=https://moneymanager-backend.onrender.com/
+# SPRING_DATASOURCE_URL=jdbc:postgresql://dpg-d32ad2mmcj7s739earp0-a.singapore-postgres.render.com:5432/moneymanager_db_vqgd
+# SPRING_DATASOURCE_USERNAME=moneymanager_db_vqgd_user
+# SPRING_DATASOURCE_PASSWORD=yryMtTEeQIsn1FtnANkDpcngr6TQEoVn
+# PORT=8080
+
+# ===========================================
+# DEPLOYMENT CHECKLIST:
+# ===========================================
+
+# ✅ Backend Code: Pushed to GitHub
+# ✅ Database: Created on Render
+# ✅ Configuration: Optimized for production
+# ✅ Port Configuration: Fixed for Render
+# ✅ Environment Variables: Ready to set
+# ❌ Environment Variables: Need to be added to Render
+# ❌ Backend Redeploy: Needed after env vars
+
+# ===========================================
+# NOTES:
+# ===========================================
+
+# 1. PORT=8080 is REQUIRED for Render to detect open ports
+# 2. server.address=0.0.0.0 is set in application.properties
+# 3. All database configurations are optimized for PostgreSQL
+# 4. JPA settings are tuned for Render's environment
+# 5. Connection pool is configured for Render's free tier
